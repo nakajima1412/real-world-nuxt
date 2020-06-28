@@ -16,5 +16,17 @@ module.exports = {
   ],
   plugins: ['prettier'],
   // add your custom rules here
-  rules: {},
+  rules: {
+    'vue/html-closing-bracket-newline': [2, { multiline: 'never' }],
+    'no-console': 'off',
+    'vue/max-attributes-per-line': 'off',
+    'vue/html-self-closing': [
+      'error',
+      {
+        html: {
+          void: 'always',
+        },
+      },
+    ],
+  },
 }
